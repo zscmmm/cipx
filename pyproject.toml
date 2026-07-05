@@ -1,0 +1,48 @@
+[project]
+name = "cipx"
+version = "0.0.5"
+description = "从 PDF/图片/压缩包/EPUB 中提取 CIP 图书信息的 Python 工具"
+readme = "README.md"
+authors = [
+    { name = "zscmmm", email = "111739721+zscmmm@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "loguru>=0.7.3",
+    "mneia-isbn>=0.0.3",
+    "numpy>=2.0",
+    "onnxruntime>=1.27.0",
+    "pillow>=10.0",
+    "pydantic-settings>=2.14.2",
+    "pymupdf>=1.27.2.3",
+    "rapidocr>=3.9",
+    "rarfile>=4.2",
+]
+
+
+[dependency-groups]
+dev = [
+    "mkdocs>=1.6.1,<2.0",
+    "mkdocs-autorefs>=1.4.1,<2.0",
+    "mkdocs-material>=9.6.12,<10.0",
+    "mkdocstrings[python]>=0.29.1,<1.0",
+    "pytest>=8.3.5",
+    "ruff>=0.15.20",
+]
+# [project.scripts]
+# cipx = "cipx:main"
+
+[build-system]
+requires = ["uv_build>=0.11.24,<0.12.0"]
+build-backend = "uv_build"
+
+[[tool.uv.index]]
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
+default = true
+
+[project.urls]
+Homepage = "https://github.com/zscmmm/cipx"
+Documentation = "https://cipx.readthedocs.org"
+Repository = "https://github.com/zscmmm/cipx.git"
+Issues = "https://github.com/zscmmm/cipx/issues"
+Changelog = "https://github.com/zscmmm/cipx/blob/main/CHANGELOG.md"

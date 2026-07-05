@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+tests/data
+*.png
+*.json
+*.jpeg
+*.jpg
+*.tar.gz
+*.zip
+*.rar
+site/
+src/isbnx/model/isbndetect_rtdetr.onnx
+src/cipx/model/best_0.onnx
+test_*.py
+.pypirc
+sample
+cipbest.onnx
+src/cipx/model/cipbest.onnx
